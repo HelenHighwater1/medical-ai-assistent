@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf9f7;
+  --foreground: #5f7a7d;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: #fffefd;
+  --color-chat-bg: #f5f4f0;
+
+  --color-moss-50: #e6ebe6;
+  --color-moss-100: #c5d0c5;
+  --color-moss-200: #9eb09e;
+  --color-moss-300: #7a907a;
+  --color-moss-400: #5f755f;
+  --color-moss-500: #5f755f;
+  --color-moss-600: #526a52;
+  --color-moss-700: #4a5d4a;
+  --color-moss-800: #3d4f3d;
+  --color-moss-900: #2d3a2d;
+
+  --color-warm-gray-50: #ede8e0;
+  --color-warm-gray-100: #e2d4be;
+  --color-warm-gray-200: #adbab3;
+  --color-warm-gray-300: #9faea6;
+  --color-warm-gray-400: #8f9e95;
+  --color-warm-gray-500: #65684d;
+  --color-warm-gray-600: #65684d;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-dm-serif);
+  --animate-pulse-dot: pulse-dot 1.4s ease-in-out infinite;
+  --animate-fade-in: fade-in 0.2s ease-out;
+  --animate-slide-up: slide-up 0.3s ease-out;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+button,
+a[href],
+[role="button"] {
+  cursor: pointer;
+}
+
+@keyframes pulse-dot {
+  0%, 80%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
