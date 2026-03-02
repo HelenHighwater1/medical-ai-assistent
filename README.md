@@ -73,16 +73,14 @@ After the cards, the patient can ask follow-up questions in a conversational cha
 
 ## Coming Soon - RAG implementation
 
-**RAG-powered Q&A** — A multi-agent pipeline for answering ALS-related questions from vetted medical sources (NINDS/NIH, PubMed). Questions are embedded via OpenAI `text-embedding-3-small`, matched against a numpy/JSON vector store using L2 similarity, and passed through a four-stage agent chain:
+**RAG-powered Q&A** — A multi-agent pipeline for answering medically related questions from vetted medical sources (NINDS/NIH, PubMed). Questions are embedded via OpenAI `text-embedding-3-small`, matched against a numpy/JSON vector store using L2 similarity, and passed through a four-stage agent chain:
 
 - **Intent** (Claude Haiku) — filters off-topic queries before any retrieval
 - **RAG agent** (Claude Sonnet) — answers strictly from retrieved source chunks
 - **Guard agent** (Claude Sonnet) — audits each claim against sources; removes or flags anything unsupported
 - **Tone agent** (Claude Sonnet) — rewrites the verified answer in plain language with suggested doctor questions
 
-**Document intake** — Upload a medical PDF and get a structured, patient-friendly 5-section summary (no vector store needed).
-
-**Appointment prep** — After a conversation, generate a full prep summary: Q&A recap, key terms, and 6–8 suggested questions to bring to your doctor.
+Still working on this, but would love to chat about my experiance getting this running!
 
 ---
 
