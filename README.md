@@ -1,26 +1,20 @@
 # Prepare for Your Next Appointment
 
-**A demo project by Helen Highwater - built as an application supplement for Citizen Health**
-
-> Citizen Health has no affiliation with or knowledge of this project. It was built independently as a demonstration of interest in their mission.
+**A demo project by Helen Highwater**
 
 ---
 
-> ⚠️ **This is NOT a product of Citizen Health.** This is an independent demo project built as part of a job application. It is **not HIPAA compliant**, does not store or protect patient data, and is **not safe to use with real medical information**. The sample documents included are entirely fictional.
+> ⚠️ **This is an independent demo project.** It is **not HIPAA compliant**, does not store or protect patient data, and is **not safe to use with real medical information**. The sample documents included are entirely fictional.
 
 ---
 
 ## Why I Built This
 
-I am passionate about Citizen Health's mission - and that passion is personal.
+This app takes a clinical document and translates it into something a frightened person can actually absorb - one piece at a time, in plain language, with warmth. It ends with a list of specific questions to bring to the next appointment, because that's what we always needed and never had.
 
-My mom had ALS.  I remember seeing the PDFs and information she was given.  The documents were overwhelming, not just because of the technical details and acronyms, and stuff like that, but also because each page had an emotional weight. We were just trying to understand what was happening to someone we loved.  
+Having watched a family member navigate a rare, terminal diagnosis, I know firsthand how isolating the clinical language can be, and thought this would be an interesting personal project to work on.
 
-That experience is why Citizen Health resonates with me in a way that goes beyond a job listing. 
-
-This app is to suppliment an application to join your SWE team. It takes a clinical document and translates it into something a frightened person can actually absorb- one piece at a time, in plain language, with warmth. It ends with a list of specific questions to bring to the next appointment, because that's what we always needed and never had.
-
-I am applying to Citizen Health specifically because I want to spend my career building technology that matters to people in the hardest moments of their lives. This is just a toy demo - Citizen Health is the real deal, and I want to be part of it.
+What I didn't expect was how deeply it would pull me into the technical side. I became genuinely interested in what LLMs can do in a high-stakes domain: how to handle sensitive information responsibly, how to balance accuracy with accessibility, and the real complexities of implementing RAG in a field where getting it wrong has consequences. This version doesn't yet include RAG - that's still in progress - but the process of building toward it has been its own education in what these systems do well and where they still fall short. If you want to get into the weeds on any of it, find me on LinkedIn.
 
 ---
 
@@ -70,7 +64,7 @@ After the cards, the patient can ask follow-up questions in a conversational cha
 - Screen reader compatible card reveal sequence
 
 **Design**
-- UI inspired by Citizen Health's own design language - indigo palette, warm typography, generous whitespace
+- UI uses an indigo palette, warm typography, generous whitespace
 - Staged card reveal that respects the emotional weight of receiving serious medical news
 - "Prepare for your appointment" framing throughout, giving the patient agency rather than positioning them as a passive recipient
 
@@ -114,10 +108,9 @@ All three sample documents are entirely fictional and contain no real patient in
 
 This project is a technical demonstration only. It is:
 
-- **Not a product of Citizen Health** - built independently by Helen Highwater as a job application supplement
+- **Independent demo project** - not affiliated with any company
 - **Not HIPAA compliant** - no data encryption, no access controls, no audit logging
 - **Not safe for real patient data** - all input is sent to a third-party AI API without a BAA
 - **Not a substitute for medical advice** - every response includes a reminder to verify with your care team
-- **Not affiliated with Citizen Health in any way** - Citizen Health has no knowledge of or responsibility for this project
 
 All sample medical documents are fictional and contain no real patient information.

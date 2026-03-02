@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, DM_Serif_Display } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import DisclaimerModal from "@/components/DisclaimerModal";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -21,7 +22,7 @@ const dmSerifDisplay = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Plain Language Medical Records - Helen for Citizen Health",
+  title: "Plain Language Medical Records",
   description:
     "Paste a clinical note or lab result and get a clear, jargon-free explanation with follow-up questions for your next doctor visit.",
   icons: {
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${dmSerifDisplay.variable} antialiased`}
       >
+        <DisclaimerModal />
         {children}
         <Analytics />
         <SpeedInsights />
