@@ -17,7 +17,7 @@ export default function Header() {
           </div>
           <div className="flex items-center gap-3">
             <a
-              href="https://github.com/HelenHighwater1/medical-ai-assistent#"
+              href="https://github.com/HelenHighwater1/medical-ai-assistent#readme"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full border border-moss-200 px-4 py-1.5 text-sm font-medium text-moss-600 transition-colors hover:bg-moss-50"
